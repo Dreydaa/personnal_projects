@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #023047;
+  }
+
+  body::before {
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9a/512x512_Dissolve_Noise_Texture.png");
+    opacity: 0.08;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    position: fixed;
+    z-index: 100;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    animation: whitenoise 0.05s linear infinite;
+}
+
+@keyframes whitenoise {
+    0% {
+        translate: 0px -100px;
+    }
+
+    100% {
+        translate: -100px;
+    }
+}
+
+.container {
+    position: absolute;
+    display: flex;
+}
+
+.color_1 {
+    height: 500px;
+    width: 500px;
+    border-bottom-right-radius: 100%;
+    background-color: #8ecae6;
+}
+
+/* .color_2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #219ebc;
+}
+
+.color_3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ffb703;
+}
+
+.color_4 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fb8500;
+} */

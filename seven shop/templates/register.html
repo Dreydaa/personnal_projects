@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../ui/static/css/register.css" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <script src="../JS/register.js"></script>
+    
+
+    <div class="register-block">
+    <form method="post">
+            
+        <div class="user-group margindebg">
+            <label for="username">Username :</label>
+            <input class="user" type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="email-group margindebg">
+            <label for="email">Email :</label>
+            <!-- <input type="email" id="email" name="email" required> -->
+            <input class="email" type="text" id="email" name="email" required>
+        </div>
+
+        <div class="password-group  margindebg">
+            <label for="password">Password :</label>
+            <input class="password" type="password" id="password" name="password" required>
+        </div>
+
+        <input class="submit" type="submit" value="Register" class="btn">
+        
+        <div class="bottom-link">
+            <a href="login">You already have an account ? Click here !</a>
+        </div>
+        
+    </form>
+    </div>
+
+</body>
+</html>
